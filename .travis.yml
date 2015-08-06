@@ -7,10 +7,10 @@ before_install:
     - sudo apt-get update -qq
     
 install:
-    - sudo apt-get install -qq cmake qt55base qt55x11extras qt55svg g++-4.8
-    - export CXX="g++-4.9"
+    - sudo apt-get install -qq cmake qt55base qt55x11extras qt55svg g++-4.8 g++-4.9 g++-5.1
 
 script:
+    - export CXX="g++-4.9"
     - source /opt/qt55/bin/qt55-env.sh
     - mkdir build 
     - cd build
