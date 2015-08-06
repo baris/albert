@@ -1,7 +1,3 @@
-
-# Build in docker
-sudo: false
-
 language: cpp
 
 before_install:
