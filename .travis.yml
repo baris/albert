@@ -1,14 +1,15 @@
 language: cpp
 
 before_install:
-    - sudo add-apt-repository -y ppa:beineri/opt-qt521 # for Qt 5.2
+    - sudo add-apt-repository -y ppa:beineri/opt-qt55
     - sudo add-apt-repository -y ppa:kalakris/cmake
     - sudo apt-get update -qq
     
 install:
-  - sudo apt-get install -qq cmake qt52base qt52x11extras qt52svg
+  - sudo apt-get install -qq cmake qt55base qt55x11extras qt55svg
 
 script:
+    - source /opt/qt55/bin/qt55-env.sh
     - mkdir build 
     - cd build
     - cmake .. -DCMAKE_BUILD_TYPE=Release
