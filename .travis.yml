@@ -8,7 +8,7 @@ before_install:
     
 install:
     - sudo apt-get install -qq cmake qt55base qt55x11extras qt55svg g++-4.8
-    - export CXX="g++-5"
+    - export CXX="g++-5.1"
 
 script:
     - source /opt/qt55/bin/qt55-env.sh
