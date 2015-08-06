@@ -1,7 +1,7 @@
+PROJECT(albert)
+
 #http://doc.qt.io/qt-5/cmake-manual.html
 cmake_minimum_required(VERSION 2.8.11)
-
-PROJECT(albert)
 
 SET(TARGET_VERSION_MAJOR 0)
 SET(TARGET_VERSION_MINOR 6)
