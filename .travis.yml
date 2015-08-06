@@ -2,11 +2,11 @@ language: cpp
 
 before_install:
     - sudo add-apt-repository -y ppa:beineri/opt-qt521 # for Qt 5.2
-    - sudo add-apt-repository --yes ppa:kalakris/cmake
+    - sudo add-apt-repository --yes ppa:smspillaz/cmake-2.8.12
     - sudo apt-get update -qq
     
 install:
-  - sudo apt-get install -qq qt52base qt52x11extras qt52svg
+  - sudo apt-get install -qq cmake qt52base qt52x11extras qt52svg
 
 script:
     - mkdir build 
