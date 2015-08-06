@@ -11,7 +11,7 @@ before_install:
     - sudo apt-get update -qq
     
 install:
-    - sudo apt-get install -qq cmake qt55base qt55x11extras qt55svgg++-4.8
+    - sudo apt-get install -qq cmake qt55base qt55x11extras qt55svg g++-4.8
     - export CXX="g++-4.8"
 
 script:
